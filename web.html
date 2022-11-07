@@ -1,22 +1,26 @@
 <html>
     
     <body>
-        <form action="/my-handling-form-page" method="post">
+        <form action="result.html" method="post">
             <ul>
+                <div>
                  <label for='name'>Name:</label><br>
                  <input type='text' id='box1' name = 'Name' maxlength="30" minlength="2" pattern = "[A-Za-z0-9\s]+" required >
                  <p style="font-size: small;">Please enter only Alphanumeric values and space </p>
-             
+                </div>
+                <div>
                  <label for='address'>Address:</label><br>
                  <input type='text' id='box2' name = 'Address' maxlength="50" minlength="1"
                  pattern = "[A-Za-z0-9.\s]+" required><p style="font-size: small;">Please enter only Alphanumeric values,special character like '.', and space</p>
-             
+                </div>
+                <div>
                  <label for='my-story'>My Story:</label><br>
                  <textarea type='text' id='box3' name = 'Mystory' maxlength="200" minlength="1"
                  pattern = "[A-Za-z0-9.-\s]+"></textarea><p style="font-size: small;">Please enter only Alphanumeric values,special characters like '.,-', and space</p><br>
-            
+                </div>
+                <div>
                  <input type="submit" value="Submit">
-             
+                </div>
      
             </ul>
         </form>
